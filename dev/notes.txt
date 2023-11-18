@@ -3,6 +3,6 @@
 - x @forward
 - x @mixin
 - x @include
-- index.scss
-- @function
-- @extend
+- x index.scss
+- x @function
+- x @extend

@@ -15,5 +15,8 @@ document.querySelector('#app').innerHTML = /*html*/ `
 	<button class="btn-secondary">Print</button>
 	<div class="infoBubble"></div>
 	<div class="warnBubble"></div>
+	<button class="saleButton">Sale today</button>
+	<div class="panel">This is a panel test</div>
+	<div class="panel--highlight">This is a panel test</div>
 </main>
 `;

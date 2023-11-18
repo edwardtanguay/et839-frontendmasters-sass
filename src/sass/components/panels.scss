@@ -1,0 +1,13 @@
+.panel {
+	background-color: beige;
+	width: 15rem;
+	height: 10rem;
+	border-radius: .5rem;
+	padding: 1rem;
+	color: black;
+
+	&--highlight {
+		@extend .panel;
+		border: 3px solid rgb(232, 164, 37);
+	}
+}

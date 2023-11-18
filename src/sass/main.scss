@@ -1,9 +1,12 @@
 @use './abstracts/variables' as *;
 @use './abstracts/mixins';
+@use './abstracts/functions';
 
 @use './base/reset';
 @use './vendors/normalize';
 @use './base/typography';
+
+@use './components/panels';
 
 main {
 	color: orange;
@@ -59,7 +62,18 @@ main {
 	.infoBubble {
 		@include mixins.ball(#444)
 	}
+
 	.warnBubble {
 		@include mixins.ball(orange)
+	}
+
+	.saleButton {
+		$base-color: #c234db;
+		background-color: $base-color; 
+		padding: .3rem .7rem;
+
+		&:hover {
+			background-color: functions.generate-shade($base-color, 40%);
+		}
 	}
 }
