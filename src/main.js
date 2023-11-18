@@ -13,5 +13,7 @@ document.querySelector('#app').innerHTML = /*html*/ `
 	<p class="test005">This is darkened 30%.</p>
 	<button class="btn-primary">Submit</button>
 	<button class="btn-secondary">Print</button>
+	<div class="infoBubble"></div>
+	<div class="warnBubble"></div>
 </main>
 `;

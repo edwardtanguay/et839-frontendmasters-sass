@@ -1,6 +1,6 @@
 - x @use
 - x @use *
-- .. @forward
+- x @forward
 - x @mixin
 - x @include
 - index.scss

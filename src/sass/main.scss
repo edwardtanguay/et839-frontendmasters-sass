@@ -55,4 +55,11 @@ main {
 	.btn-secondary {
 		@include mixins.mainButton(green, yellow);
 	}
+
+	.infoBubble {
+		@include mixins.ball(#444)
+	}
+	.warnBubble {
+		@include mixins.ball(orange)
+	}
 }

@@ -1,6 +1,2 @@
-@mixin mainButton($bgcolor, $textcolor) {
-	background-color: $bgcolor;
-	color: $textcolor;
-	padding: .4rem .7rem;
-	border-radius: .5rem;
-}
+@forward 'mixins-corporate';
+@forward 'mixins-general';
