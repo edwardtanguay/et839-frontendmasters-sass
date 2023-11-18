@@ -4,7 +4,6 @@ body {
 	padding: 0 1rem;
 
 	main {
-		$highlightColor: gold;
 		color: orange;
 
 		.highlighted {
@@ -18,27 +17,27 @@ body {
 		}
 
 		.test001 {
-			background-color: saturate(#458292, 0%); 
+			background-color: saturate($testColor, 0%); 
 			padding: 1rem;
 			width: fit-content;
 		}
 		.test002 {
-			background-color: saturate(#458292, 100%); 
+			background-color: saturate($testColor, 100%); 
 			padding: 1rem;
 			width: fit-content;
 		}
 		.test003 {
-			background-color: darken(#458292, 10%); 
+			background-color: darken($testColor, 10%); 
 			padding: 1rem;
 			width: fit-content;
 		}
 		.test004 {
-			background-color: darken(#458292, 20%); 
+			background-color: darken($testColor, 20%); 
 			padding: 1rem;
 			width: fit-content;
 		}
 		.test005 {
-			background-color: darken(#458292, 30%); 
+			background-color: darken($testColor, 30%); 
 			padding: 1rem;
 			width: fit-content;
 		}
