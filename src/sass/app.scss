@@ -1,2 +1,54 @@
-@use 'variables';
-@use 'main';
+@use 'variables' as v;
+@use 'mixins' as m;
+
+body {
+	background-color: #666;
+	font-family: sans-serif;
+	padding: 0 1rem;
+
+	main {
+		color: orange;
+
+		.highlighted {
+			color: v.$highlightColor;
+		}
+
+		.highlightedBox {
+			border: 2px solid v.$highlightColor;
+			width: fit-content;
+			padding: 1rem;
+		}
+
+		.test001 {
+			background-color: saturate(v.$testColor, 0%); 
+			padding: 1rem;
+			width: fit-content;
+		}
+		.test002 {
+			background-color: saturate(v.$testColor, 100%); 
+			padding: 1rem;
+			width: fit-content;
+		}
+		.test003 {
+			background-color: darken(v.$testColor, 10%); 
+			padding: 1rem;
+			width: fit-content;
+		}
+		.test004 {
+			background-color: darken(v.$testColor, 20%); 
+			padding: 1rem;
+			width: fit-content;
+		}
+		.test005 {
+			background-color: darken(v.$testColor, 30%); 
+			padding: 1rem;
+			width: fit-content;
+		}
+		.btn-primary {
+			@include m.mainButton(navy, yellow);
+		}
+		.btn-secondary {
+			@include m.mainButton(green, yellow);
+		}
+	}
+}
