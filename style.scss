@@ -1,5 +1,46 @@
 body {
-	background-color: #444;
+	background-color: #666;
 	font-family: sans-serif;
 	padding: 0 1rem;
+
+	main {
+		$highlightColor: gold;
+		color: orange;
+
+		.highlighted {
+			color: $highlightColor;
+		}
+
+		.highlightedBox {
+			border: 2px solid $highlightColor;
+			width: fit-content;
+			padding: 1rem;
+		}
+
+		.test001 {
+			background-color: saturate(#458292, 0%); 
+			padding: 1rem;
+			width: fit-content;
+		}
+		.test002 {
+			background-color: saturate(#458292, 100%); 
+			padding: 1rem;
+			width: fit-content;
+		}
+		.test003 {
+			background-color: darken(#458292, 10%); 
+			padding: 1rem;
+			width: fit-content;
+		}
+		.test004 {
+			background-color: darken(#458292, 20%); 
+			padding: 1rem;
+			width: fit-content;
+		}
+		.test005 {
+			background-color: darken(#458292, 30%); 
+			padding: 1rem;
+			width: fit-content;
+		}
+	}
 }
