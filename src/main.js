@@ -1,4 +1,4 @@
-import './sass/app.scss';
+import './sass/main.scss';
 
 document.querySelector('#app').innerHTML = /*html*/ `
 <h1>Sass Course notes</h1>
