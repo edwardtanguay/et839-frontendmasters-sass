@@ -1,5 +1,5 @@
 @use 'variables' as v;
-@use 'mixins' as m;
+@use 'mixins' as *;
 
 body {
 	background-color: #666;
@@ -45,10 +45,10 @@ body {
 			width: fit-content;
 		}
 		.btn-primary {
-			@include m.mainButton(navy, yellow);
+			@include mainButton(navy, yellow);
 		}
 		.btn-secondary {
-			@include m.mainButton(green, yellow);
+			@include mainButton(green, yellow);
 		}
 	}
 }
